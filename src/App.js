@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// the commented lines refer to tests 1 and 2
+
+import React from "react";
+import NumberGame from "./Components/NumberGame";
+// import Counter from "./Components/Counter";
+// import FilterList from "./Components/FilterList";
+
+// const items = [
+//   { id: 1, name: "Banana" },
+//   { id: 2, name: "Apple" },
+//   { id: 3, name: "Orange" },
+// ];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NumberGame />
+      {/* <FilterList items={items} /> */}
+      {/* <Counter /> */}
     </div>
   );
 }
-
 export default App;
